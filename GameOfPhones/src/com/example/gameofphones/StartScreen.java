@@ -1,16 +1,14 @@
 package com.example.gameofphones;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.widget.Button;
+import android.view.View;
 import android.widget.LinearLayout;
 
 public class StartScreen extends Activity {
 
-
-	Button startButton;
-	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,4 +31,12 @@ public class StartScreen extends Activity {
 		return true;
 	}
 
+	public void switchToMenuScreen(View veiw){
+	//Code to switch to other screen
+		Intent menuScreen = null;
+		
+		startActivity(menuScreen);
+	}
+	
+	
 }
