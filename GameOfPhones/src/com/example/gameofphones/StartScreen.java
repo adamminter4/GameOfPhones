@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.LinearLayout;
 
 public class StartScreen extends Activity {
 
@@ -15,10 +14,10 @@ public class StartScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_screen);
 		
-		 LinearLayout backgroundImage = new LinearLayout(this);
+		 //LinearLayout backgroundImage = new LinearLayout(this);
 		 //R.drawable.startScreenBackgroundImage should be the setBackGroundResourceValue 
-		 backgroundImage.setBackgroundResource(0);
-		 this.setContentView(backgroundImage);
+		 //backgroundImage.setBackgroundResource(0);
+		 //this.setContentView(backgroundImage);
 
 	//Need Button Function
 		 
@@ -33,10 +32,8 @@ public class StartScreen extends Activity {
 
 	public void switchToMenuScreen(View veiw){
 	//Code to switch to other screen
-		Intent menuScreen = null;
-		
-		startActivity(menuScreen);
+		Intent loginScreen = new Intent(this, LoginToFoursquare.class);
+		startActivity(loginScreen);
 	}
-	
 	
 }

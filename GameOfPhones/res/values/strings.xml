@@ -7,5 +7,8 @@
     <string name="start">Start Game</string>
     <string name="title_activity_menu_screen">MenuScreen</string>
     <string name="new_game">New Game</string>
-    
+    <string name="title_activity_login_to_foursquare">LoginToFoursquare</string>
+    <string name="title_activity_four_square_oauth">FourSquareOauth</string>
+    <string name="title_activity_forusquare_oauth_web_veiw">ForusquareOauthWebVeiw</string>
+
 </resources>
