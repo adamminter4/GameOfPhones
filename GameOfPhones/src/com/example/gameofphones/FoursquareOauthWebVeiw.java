@@ -51,13 +51,15 @@ public class FoursquareOauthWebVeiw extends Activity {
 
 					Toast.makeText(FoursquareOauthWebVeiw.this,
 							"Token: " + accessToken, Toast.LENGTH_SHORT).show();
-					
-					
+
 				}
 			}
 		});
 		webview.loadUrl(url);
-		//Bad Process?
+		// Bad Process?
+
+		// Generate User Profile
+
 		Intent menuScreen = new Intent(this, MenuScreen.class);
 		startActivity(menuScreen);
 	}
