@@ -20,7 +20,7 @@ public class FoursquareOauthWebVeiw extends Activity {
 	public static final String CALLBACK_URL = "https://cgutshal.com";
 	public static final String CLIENT_ID = "JQ40M5ZLDW5EW5TOWWL2OJT0DZV5GUFCGIEWKNHA13X4YEPR";
 
-	@Override
+	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_forusquare_oauth_web_veiw);

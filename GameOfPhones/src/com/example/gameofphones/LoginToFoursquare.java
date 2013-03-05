@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class LoginToFoursquare extends Activity {
 
-	 @Override
+
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_login_to_foursquare);
