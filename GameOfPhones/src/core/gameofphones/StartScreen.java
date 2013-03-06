@@ -1,4 +1,6 @@
-package com.example.gameofphones;
+package core.gameofphones;
+
+import com.example.gameofphones.R;
 
 import android.app.Activity;
 import android.content.Intent;

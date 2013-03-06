@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.gameofphones.StartScreen"
+            android:name="core.gameofphones.StartScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,23 +25,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.gameofphones.MenuScreen"
+            android:name="core.gameofphones.MenuScreen"
             android:label="@string/title_activity_menu_screen"
-            android:parentActivityName="com.example.gameofphones.StartScreen" >
+            android:parentActivityName="core.gameofphones.StartScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.gameofphones.StartScreen" />
         </activity>
         <activity
-            android:name="com.example.gameofphones.LoginToFoursquare"
+            android:name="core.gameofphones.LoginToFoursquare"
             android:label="@string/title_activity_login_to_foursquare" >
         </activity>
         <activity
-            android:name="com.example.gameofphones.FoursquareOauthWebVeiw"
+            android:name="core.gameofphones.FoursquareOauthWebVeiw"
             android:label="@string/title_activity_forusquare_oauth_web_veiw" >
         </activity>
         <activity
-            android:name="com.example.gameofphones.FriendsList"
+            android:name="core.gameofphones.FriendsList"
             android:label="@string/title_activity_friends_list" >
         </activity>
     </application>
