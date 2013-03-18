@@ -3,13 +3,23 @@ package core.gameOfPhones;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class DisplayFriends extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_display_friends);
+		LinearLayout lView = new LinearLayout(this);
+
+		TextView myText = new TextView(this);
+		String friends = new GetFriends().printFriends();
+		myText.setText(friends);
+
+		lView.addView(myText);
+
+		setContentView(lView);
 	}
 
 	@Override
