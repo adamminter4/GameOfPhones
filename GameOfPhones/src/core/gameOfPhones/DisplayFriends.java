@@ -1,5 +1,7 @@
 package core.gameOfPhones;
 
+import java.io.IOException;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,7 +16,14 @@ public class DisplayFriends extends Activity {
 		LinearLayout lView = new LinearLayout(this);
 
 		TextView myText = new TextView(this);
-		String friends = new GetFriends().printFriends();
+		String friends = "";
+		try {
+			friends = new GetFriends().printFriends();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		myText.setText(friends);
 
 		lView.addView(myText);
