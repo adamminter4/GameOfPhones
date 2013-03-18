@@ -1,7 +1,6 @@
 package core.gameOfPhones;
 
 
-import core.gameOfPhones.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;

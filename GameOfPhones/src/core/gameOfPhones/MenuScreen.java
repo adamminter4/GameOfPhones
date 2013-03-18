@@ -2,7 +2,6 @@ package core.gameOfPhones;
 
 
 
-import core.gameOfPhones.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +27,7 @@ public class MenuScreen extends Activity {
 		  this.closeButton.setOnClickListener(new OnClickListener() {
 			    @Override
 			    public void onClick(View v) {
-			    	Intent display = new Intent(MenuScreen.this, DisplayFriends.class);
+			  	Intent display = new Intent(MenuScreen.this, DisplayFriends.class);
 					startActivity(display);
 			    }
 			  });
