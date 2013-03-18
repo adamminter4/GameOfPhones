@@ -1,7 +1,8 @@
-package core.gameofphones;
+package core.gameOfPhones;
 
-import com.example.gameofphones.R;
 
+
+import core.gameOfPhones.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,20 +14,26 @@ import android.widget.Button;
 public class MenuScreen extends Activity {
 
 
+	private Button closeButton;
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu_screen);
-
-		//Doublecheck XML to make sure this bitch gets a button. 
-		 Button friendsButton = (Button)findViewById(R.id.button);
-		 friendsButton.setOnClickListener(new OnClickListener() {
-	         public void onClick(View v) {
-	        	Intent friendsList = new Intent(MenuScreen.this, FriendsList.class);
-	 			startActivity(friendsList);
-	         }
-	     });
+		friendsButton();
+	
 	}
 
+	private void friendsButton() {
+		this.closeButton = (Button)this.findViewById(R.id.friends);
+		  this.closeButton.setOnClickListener(new OnClickListener() {
+			    @Override
+			    public void onClick(View v) {
+			    	Intent display = new Intent(MenuScreen.this, DisplayFriends.class);
+					startActivity(display);
+			    }
+			  });
+	}
+	
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_menu_screen, menu);

@@ -1,4 +1,4 @@
-package core.gameofphones;
+package core.gameOfPhones;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,10 +16,10 @@ import android.util.Log;
 public class GetFriends {
 
 
-		public void printFriends(){ 
+		public String printFriends(){ 
 		String name = "https://api.foursquare.com/v2/users/self/friends";
 		String output = connect(name);
-		System.out.print(output);
+		return output;
 		}
 	
 		public String connect(String url)

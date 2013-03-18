@@ -12,5 +12,13 @@
         android:layout_centerVertical="true"
         android:text="@string/new_game"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button android:id="@+id/friends"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="friendsButton"
+    android:textAppearance="?android:attr/textAppearanceLarge">
+    </Button>
+    
 
 </RelativeLayout>

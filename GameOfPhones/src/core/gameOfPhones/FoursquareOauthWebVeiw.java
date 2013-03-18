@@ -1,7 +1,8 @@
-package core.gameofphones;
+package core.gameOfPhones;
 
-import com.example.gameofphones.R;
 
+import core.gameOfPhones.R;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,6 +24,7 @@ public class FoursquareOauthWebVeiw extends Activity {
 	public static final String CLIENT_ID = "JQ40M5ZLDW5EW5TOWWL2OJT0DZV5GUFCGIEWKNHA13X4YEPR";
 
 	
+	@SuppressLint("SetJavaScriptEnabled")
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_forusquare_oauth_web_veiw);
@@ -58,12 +60,13 @@ public class FoursquareOauthWebVeiw extends Activity {
 			}
 		});
 		webview.loadUrl(url);
+		
 		// Bad Process?
-
+		
 		// Generate User Profile
 
 		Intent menuScreen = new Intent(this, MenuScreen.class);
 		startActivity(menuScreen);
-	}
+		}
 
 }

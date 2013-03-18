@@ -1,7 +1,8 @@
-package core.gameofphones;
+package core.gameOfPhones;
 
-import com.example.gameofphones.R;
 
+
+import core.gameOfPhones.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,7 +1,6 @@
-package core.gameofphones;
+package core.gameOfPhones;
 
-import com.example.gameofphones.R;
-
+import core.gameOfPhones.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,13 +13,6 @@ public class StartScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_screen);
 		
-		 //LinearLayout backgroundImage = new LinearLayout(this);
-		 //R.drawable.startScreenBackgroundImage should be the setBackGroundResourceValue 
-		 //backgroundImage.setBackgroundResource(0);
-		 //this.setContentView(backgroundImage);
-
-	//Need Button Function
-		 
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
